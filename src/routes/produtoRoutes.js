@@ -1,6 +1,7 @@
+
 const express = require('express');
 const router = express.Router();
-const produtoController = require('../controllers/produtoController.controller');
+const produtoController = require('../controllers/produtoController');
 
 //Rota POST
 //produto/novo

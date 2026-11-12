@@ -38,7 +38,25 @@ const produtoController = {
             total: produtos.length,
             produtos: produtos
         });
+    },
+    listarProdutoPorCodigo: (req, res) => {
+    const { id } = req.params;
+    const produto = produtoModel.buscarPorCodigo(id);
+
+    if (!produto) {
+        return res.status(404).json({
+            sucesso: false,
+            message: 'Produto não encontrado'
+        });
     }
+
+    return res.status(200).json({
+        sucesso: true,
+        message: 'Produto encontrado com sucesso',
+        produto: produto
+    });
+}
+
 
 }
 module.exports = produtoController;

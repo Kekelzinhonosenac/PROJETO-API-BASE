@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "codigo": "001",
+    "nome": "NOTEBOOK",
+    "preco": 3500,
+    "qtde": 2,
+    "total": 7000,
+    "criadoEm": "2026-11-12T00:47:59.208Z"
+  }
+]
