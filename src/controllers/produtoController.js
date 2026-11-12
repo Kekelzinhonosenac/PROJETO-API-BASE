@@ -1,5 +1,4 @@
 const produtoModel = require('../models/produtoModel');
-
 const produtoController = {
     criarProduto: (req, res) => {
         const {codigo, nome, preco, qtde} = req.body;
@@ -55,8 +54,6 @@ const produtoController = {
         message: 'Produto encontrado com sucesso',
         produto: produto
     });
-}
-
-
+},
 }
 module.exports = produtoController;
