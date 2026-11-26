@@ -7,7 +7,7 @@ const { defineConfig, env } = require('prisma/config');
 // 3. Exporta o objeto de configuração que sera lido pelos comandos de terminal
 // (como 'npx prisma migrate dev', 'npx prisma generate' e 'npx prisma studio').
 module.exports = defineConfig({
-  // 4. Indica onde está o arquivo (ou pasta) com o desenho das suas tabelas.
+  // 4. Indica onde está o arquivo (ou pasta).
   schema: 'prisma/schema.prisma',
 
   // 5. Define a pasta onde o Prisma vai salvar o histórico de alterações SQL
