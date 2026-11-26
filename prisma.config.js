@@ -5,7 +5,6 @@ require('dotenv').config();
 const { defineConfig, env } = require('prisma/config');
 
 // 3. Exporta o objeto de configuração que sera lido pelos comandos de terminal
-// (como 'npx prisma migrate dev', 'npx prisma generate' e 'npx prisma studio').
 module.exports = defineConfig({
   // 4. Indica onde está o arquivo (ou pasta).
   schema: 'prisma/schema.prisma',
